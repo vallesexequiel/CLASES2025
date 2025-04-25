@@ -1,0 +1,7 @@
+strong{
+    color: blueviolet;
+}
+
+p strong{
+    background-color: blue;
+}

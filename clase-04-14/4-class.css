@@ -1,0 +1,11 @@
+.encabezado{
+    color: purple;
+}
+
+.nombre{
+    background-color: grey;
+}
+
+p.encabezado{
+    color: red;
+}

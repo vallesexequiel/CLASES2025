@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>condicionales</title>
+</head>
+<body>
+    <script>
+
+        //let a = 6;
+        let a = "6";
+
+        if (a==6){
+            console.log("es 6");
+        }else{
+            console.log("no es 6");
+        }
+
+        //oprador ternario
+        console.log(a== 6 ? "es 6": " no es 6");
+        
+        switch (a) {
+            case 6:
+                console.log("es 6");   
+                break;
+            case "6":
+                console.log("es el texto 6 ");
+                break;
+            default:
+                console.log("no es 6");               
+        }
+        // null y undefined es lo mismo
+        console.log(null == undefined);
+
+        console.log("" == "0");
+        console.log("" == 0);
+        console.log("0"== 0);
+        
+    </script>
+</body>
+</html>
