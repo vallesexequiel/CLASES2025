@@ -10,9 +10,9 @@
         // funcion comun
         function suma(a , b) {
             return a + b;
-        }
+        };
         console.log(suma(5, 6));
-        
+
 
         //funcion como una variable
         const suma2 = function nuevafuncion (a, b){
@@ -28,12 +28,16 @@
         console.log(suma(22, 22));
 
         
-        
         // funciones flecha
-        const func = ( a, b) =>{
+        const suma4 = ( a, b) =>{
             return a - b;
         };
-        console.log(func(5,9));
+        console.log(suma4(5,9));
+
+
+        // funcion flecha con una sola linea
+        const suma5 = (a , b) => a + b;
+        console.log(suma5(55 , 55));
         
     </script>
 </body>
