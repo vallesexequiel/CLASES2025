@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>funciones, var , let</title>
+</head>
+<body>
+    <script>
+function rango(a , b) {
+    for (var i = a; i < b; i++){
+        console.log(i);
+        
+    }
+    // cuando tengo la var puedo llamarlo dentro de la funcion y mostralo
+    console.log("fin", i);
+    
+}
+    rango(1 , 4);   
+//console.log(let("fin", i)); pero si cambio de var a let me va a tirar error porque esta fuera del bucle
+// tambien cambiar de let a var dentro de la funcion
+
+    function rango2(a , b) {
+    for (let i = a; i < b; i++){
+        console.log(i);
+        
+    }
+    // no funciona
+    console.log("fuera del bucle", i);
+    
+}   
+
+rango2(10, 14);
+
+// siempre es mejor siempre usar let que usar var
+// se comienza con const y despues let
+// ya no se usa var basicamente 
+
+    </script>
+</body>
+</html>
