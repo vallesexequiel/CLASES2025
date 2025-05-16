@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="enc">encabezado</h1>
+    <p id="texto">parrafo</p>
+
+    <ul>
+        <li>uno</li>
+        <li>dos</li>
+        <li>tres</li>
+    </ul>
+
+    <ol id="lista">
+        <li class="item">a</li>
+        <li class="item">b</li>
+        <li class="item">c</li>
+        <li class="item" style="display: none;">d</li>
+    </ol>
+
+    <script>
+
+        //acceso por id
+        const encabezado = document.getElementById("enc")
+        console.log("hola");
+        console.log(encabezado.textContent);
+        console.log(texto.textContent);
+
+        //acceso por nombre de etiqueta
+        const lis = document.getElementsByTagName("li")
+        console.log(lis.length);
+        console.log(lis[0].textContent);
+
+        //acceso por clase
+
+        const el = document.getElementsByClassName("item")
+        console.log(el.length);
+        console.log(el[2].textContent);
+
+        //acceso por selector  CSS
+        const porelemnto = document.querySelector("ul")
+        console.log(porelemnto.textContent);
+        console.log(porelemnto.innerHTML);
+        
+        const porid = document.querySelector("#texto")
+        console.log(porid.textContent);
+
+        const porclase = document.querySelector(".item")
+        console.log(porclase.textContent);
+        
+       //innerHTML vs innerText vs textcontent
+        const lista = document.getElementById("lista")
+        console.log(lista.innerHTML);
+        console.log(lista.innerText);
+        console.log(lista.textContent);
+                         
+        
+    </script>
+</body>
+</html>
