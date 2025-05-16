@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="enc">encabezado</h1>
+    <p id="texto">parrafo</p>
+
+    <ul>
+        <li>uno</li>
+        <li>dos</li>
+        <li>tres</li>
+    </ul>
+
+    <script>
+
+        //acceso por id
+        const encabezado = document.getElementById("enc")
+        console.log("hola");
+        console.log(encabezado.textContent);
+        console.log(texto.textContent);
+
+        //acceso por nombre de etiqueta
+        const lis = document.getElementsByTagName("li")
+        console.log(lis.length);
+        console.log(lis[0].textContent);
+    </script>
+</body>
+</html>
