@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>lista</h1>
+    <ul id="lista">
+        <li>uno</li>
+        <li id="item">dos</li>
+    </ul>
+    <script>
+
+        //const lista = document.getElementById("lista");
+
+        // Crear elmento
+        const nuevoli = document.createElement("li")
+        nuevoli.innerText = "nuevo li"
+
+        // Agregar al HTML (dentro d la lista)
+        const lista = document.getElementById("lista");
+        lista.appendChild(nuevoli)
+
+        //crea un parrafo
+        const parrafo = document.createElement("p")
+        parrafo.innerText = "aqui"
+        document.body.appendChild(parrafo); 
+
+        // elminar elementos
+
+        const item = document.getElementById("item")
+        item.remove();
+    </script>
+</body>
+</html>
