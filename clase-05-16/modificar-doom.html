@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="encabezado"> un titulo</h1>
+    <p id="texto"> un parrafo </p>
+    <a id="link" href="#">enlace</a>
+    <script>
+        // modificando el contenido del elemento
+
+        const encabezado = document.getElementById("encabezado")
+        encabezado.innerText = "titulo modificao en JS"
+
+        const texto = document.getElementById("texto")
+        texto.innerHTML = "<b>hola</b> mundo";
+
+        // leer/modificar atributos del elemnto 
+
+        const link = document.getElementById("link")
+        console.log(link.getAttribute("href"));
+        link.setAttribute("href", "https://google.com.ar");
+        link.removeAttribute("href");
+    </script>
+    
+</body>
+</html>
