@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>titulo</h1>
+    <p id="texto">un texto</p>
+    <button id="saludar">saludar</button>
+    <script>
+        //accedemos al elemento co Id="saludar"
+
+        const saludar= document.getElementById("saludar")
+
+        //funcion que atiende el evento "click"}
+
+        function handleClik(){
+            console.log("hola mundo");
+            
+            const texto = document.getElementById("texto")
+            texto.innerText = "hola mundo"
+        }
+
+        //connectamos al evento "click " con addeventlistener
+        //primer parametro: eveto.
+        //segundo parametro: referencia a funcion
+
+        saludar.addEventListener("click", handleClik)
+
+        //closures
+
+        let contador = 0;
+        saludar.addEventListener("mouseover",() => {
+            saludar.style.backgroundColor = "lightgreen"
+            saludar.innerText = "presioname" + contador
+            contador++;
+        });
+
+        saludar.addEventListener("mouseout", () => {
+            saludar.style.backgroundColor = "",
+            saludar.innerText = "saludar"
+        })
+
+    </script>
+    
+</body>
+</html>
